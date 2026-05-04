@@ -22,11 +22,11 @@ public class Knjiga {
 		this.naslov = naslov;
 	}
 	public long getIsbn() {
-		if(isbn <= 0)
-			throw new IllegalArgumentException("ISBN broj mora biti veci od 0!");
 		return isbn;
 	}
 	public void setIsbn(long isbn) {
+		if(isbn <= 0)
+			throw new IllegalArgumentException("ISBN broj mora biti veci od 0!");
 		this.isbn = isbn;
 	}
 	public List<Autor> getAutori() {
